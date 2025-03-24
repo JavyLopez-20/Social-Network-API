@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-const { validator } = require('validator');
+// const { validator } = require('validator');
 
 const userSchema = new Schema({
     username: {
@@ -12,7 +12,7 @@ const userSchema = new Schema({
         type: String,
         required: true,
         trimmed: true,
-        validate: [validator.email, "Invalid Email"],
+        // validate: [validator.email, "Invalid Email"],
     },
     thoughts: [{
         type: Schema.Types.ObjectId,
